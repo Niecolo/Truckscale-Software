@@ -80,9 +80,16 @@ The **Truck Scale Weighing System** is a professional-grade desktop application 
 ### Security & Management
 
 - **User Authentication**: Secure login with password hashing (SHA-256)
+  <img width="1365" height="721" alt="image" src="https://github.com/user-attachments/assets/be06461a-84bc-4f0c-b601-de807b717d35" />
+
 - **Role-based Access Control**: Admin, Operator, and User permission levels
+  <img width="1365" height="707" alt="image" src="https://github.com/user-attachments/assets/1bccb97c-c3ef-4238-ab5f-f2f8251d319b" />
+
 - **User Management**: Create, edit, and delete user accounts
+  <img width="1349" height="301" alt="image" src="https://github.com/user-attachments/assets/2579ccd0-e6ea-4f47-b090-81f9b34fe28e" />
+
 - **Application Activation**: Trial period with activation system
+<img width="745" height="207" alt="image" src="https://github.com/user-attachments/assets/0e486639-1bf0-405c-b716-36d2d54834eb" />
 
 ---
 
@@ -92,16 +99,22 @@ The **Truck Scale Weighing System** is a professional-grade desktop application 
 The application features a modern, intuitive interface with a tabbed layout for efficient workflow management.
 
 ### Entry Form
-![Entry Form](assets/app_icon.png)
+<img width="1365" height="717" alt="image" src="https://github.com/user-attachments/assets/d458728d-3afe-4fa8-9b5c-5598dad7a36f" />
+
 *Primary data entry form with live weight display and camera feed*
 
 ### Key Interface Elements
 
-1. **Entry Form Tab**: Transaction data entry with live weight display
-2. **Pending Records Tab**: Manage incomplete two-way transactions
-3. **Completed Records Tab**: View and manage finished transactions
-4. **Reports Tab**: Generate and export reports
-5. **Settings Tab**: System configuration and user management
+1. **Entry Form Tab**: Transaction data entry with live weight display <img width="1365" height="721" alt="image" src="https://github.com/user-attachments/assets/85b35c65-7989-4b5d-80c2-fd578556beb1" />
+
+2. **Pending Records Tab**: Manage incomplete two-way transactions <img width="1365" height="721" alt="image" src="https://github.com/user-attachments/assets/d41b90cb-7506-4d66-b11d-913a6de70d1b" />
+
+3. **Completed Records Tab**: View and manage finished transactions <img width="1365" height="725" alt="image" src="https://github.com/user-attachments/assets/e1229412-86f9-4ac5-848c-3cd98bbb2880" />
+
+4. **Reports Tab**: Generate and export reports <img width="1365" height="724" alt="image" src="https://github.com/user-attachments/assets/ec760985-b04e-46e1-bad0-be7b3b142bd2" />
+
+5. **Settings Tab**: System configuration and user management <img width="1365" height="714" alt="image" src="https://github.com/user-attachments/assets/51312a39-5a90-4c58-b024-5a08436e9b3f" />
+
 
 ---
 
