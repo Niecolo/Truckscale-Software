@@ -1,0 +1,199 @@
+Download and install python silently
+curl -O https://www.python.org/ftp/python/3.13.7/python-3.13.7-amd64.exe
+
+Open new Command Prompt to verify (important!)
+py --version
+
+#test communication port
+
+python -m venv venv
+
+venv\Scripts\activate
+
+pip install pyserial
+
+cd C:\Users\Leoncio\Desktop\weighing_scale_project\assets
+
+python test_com.py
+
+Step 1: Clean Setup
+# Navigate to project folder
+cd C:\Users\Leoncio\Desktop\weighing_scale_project
+
+
+
+# Remove old builds
+del /q dist\* 2>nul
+del /q build\* 2>nul
+del /q *.spec 2>nul
+
+# Create fresh virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+
+python.exe -m pip install --upgrade pip
+
+# Install all dependencies
+pip install pyserial Pillow ReportLab pywin32 PyMuPDF pypdf PyQt5 cryptography numpy escpos tk
+
+pip install tk
+
+cd C:\Users\Leoncio\Desktop\weighing_scale_project\venv\Scripts
+
+python pywin32_postinstall.py -install
+
+
+# Go back to the Main Directory
+cd C:\Users\Leoncio\Desktop\weighing_scale_project
+
+Step 2: Simple Build (Recommended)
+# Activate virtual environment
+venv\Scripts\activate
+
+# Install PyInstaller in virtual environment
+pip install pyinstaller
+
+# Basic build first to test
+pyinstaller --onefile --windowed weighing_scale_app.py
+
+
+Step 3: If PDF printing fails, use the comprehensive command that will compile the code and create a distributable file
+# Complete build with all necessary imports and data
+
+pyinstaller --onefile --windowed --noconfirm --icon="assets\app_icon.ico" --name "Truck Scale" ^
+--hidden-import=reportlab.pdfbase.cidfonts ^
+--hidden-import=reportlab.pdfbase.pdfmetrics ^
+--hidden-import=reportlab.pdfbase.ttfonts ^
+--hidden-import=reportlab.platypus ^
+--hidden-import=reportlab.lib.pagesizes ^
+--hidden-import=reportlab.lib.units ^
+--hidden-import=reportlab.lib.styles ^
+--hidden-import=reportlab.lib.enums ^
+--hidden-import=reportlab.graphics.barcode ^
+--hidden-import=reportlab.pdfbase ^
+--hidden-import=reportlab.pdfbase.pdfmetrics ^
+--hidden-import=reportlab.pdfbase.ttfonts ^
+--hidden-import=reportlab.graphics ^
+--hidden-import=reportlab.graphics.shapes ^
+--hidden-import=reportlab.graphics.renderPDF ^
+--hidden-import=win32print ^
+--hidden-import=win32api ^
+--hidden-import=PIL ^
+--hidden-import=PIL.Image ^
+--hidden-import=PIL.ImageOps ^
+--hidden-import=serial ^
+--hidden-import=serial.tools.list_ports ^
+--hidden-import=numpy ^
+--add-data "C:\Users\Leoncio\Desktop\weighing_scale_project\venv\Lib\site-packages\reportlab;reportlab" ^
+--add-data "C:\Users\Leoncio\Desktop\weighing_scale_project\assets;assets" ^
+weighing_scale_app.py
+
+
+# Define the ProgramData directory path
+PROGRAM_DATA_DIR = r"C:\ProgramData\Truck Scale" # Actual App Name Directory
+
+App Icon Image Location:
+self.root.iconbitmap("C:\\Users\\Leoncio\\Desktop\\weighing_scale_project\\assets\\app_icon.ico")
+
+Client App Icon Image Location:
+"C:\Users\Leoncio\Desktop\weighing_scale_project\assets\logo.png"
+# - ADD LOGO -
+
+# Small delay to prevent excessive CPU usage
+time.sleep(0.3)
+
+
+def delete_temp_file(path):
+                    """Function to delete the temporary file after delay."""
+                    time.sleep(5) # Wait 5 seconds
+
+#pdf print size
+    if self.pdf_page_size_var.get() == "A6":
+        
+PDF Font Size
+self.pdf_print_template_font_size_var = tk.IntVar(value=self.config.get("pdf_print_template_font_size", 12))
+
+
+
+username: admin
+pass: password
+
+
+EXPIRY_DAYS_INITIAL_TRIAL = 30 # 30 days initial expiry
+EXPIRY_DAYS_ON_ACTIVATION = 1825 # 5 Years Expiry
+
+
+# Set the full paths for config and database files
+CONFIG_FILE = os.path.join(PROGRAM_DATA_DIR, "config.json")
+DB_FILE = os.path.join(PROGRAM_DATA_DIR, "database.db")
+
+
+spaceAfter=5,  # <-- KEEP: This adds space after each paragraph
+
+line_spacing_inch = self.print_line_spacing.get() * 0.05 * inch   # this is the line spacing or the space within the sentence (change all instances)
+
+STARTING_OFFSET = 1000 # Change this to your desired starting number of Ticket
+
+
+
+
+
+cd C:\Users\Leoncio\Desktop\weighing_scale_project
+
+del /q dist\* 2>nul
+
+del /q build\* 2>nul
+
+del /q *.spec 2>nul
+
+python -m venv venv
+
+venv\Scripts\activate
+
+pip install pyserial Pillow ReportLab pywin32 PyMuPDF pypdf PyQt5 cryptography numpy escpos pylint pyinstaller tk
+
+cd C:\Users\Leoncio\Desktop\weighing_scale_project\venv\Scripts
+
+python pywin32_postinstall.py -install
+
+cd C:\Users\Leoncio\Desktop\weighing_scale_project
+
+venv\Scripts\activate
+
+pip install pyinstaller
+
+python.exe -m pip install --upgrade pip
+
+pyinstaller --onefile --windowed weighing_scale_app.py
+
+pyinstaller --onefile --windowed --noconfirm --icon="assets\app_icon.ico" --name "Truck Scale" ^
+--manifest "app.manifest" ^
+--hidden-import=reportlab.pdfbase.cidfonts ^
+--hidden-import=reportlab.pdfbase.pdfmetrics ^
+--hidden-import=reportlab.pdfbase.ttfonts ^
+--hidden-import=reportlab.platypus ^
+--hidden-import=reportlab.lib.pagesizes ^
+--hidden-import=reportlab.lib.units ^
+--hidden-import=reportlab.lib.styles ^
+--hidden-import=reportlab.lib.enums ^
+--hidden-import=reportlab.graphics.barcode ^
+--hidden-import=reportlab.pdfbase ^
+--hidden-import=reportlab.pdfbase.pdfmetrics ^
+--hidden-import=reportlab.pdfbase.ttfonts ^
+--hidden-import=reportlab.graphics ^
+--hidden-import=reportlab.graphics.shapes ^
+--hidden-import=reportlab.graphics.renderPDF ^
+--hidden-import=win32print ^
+--hidden-import=win32api ^
+--hidden-import=PIL ^
+--hidden-import=PIL.Image ^
+--hidden-import=PIL.ImageOps ^
+--hidden-import=serial ^
+--hidden-import=serial.tools.list_ports ^
+--hidden-import=numpy ^
+--add-data "C:\Users\Leoncio\Desktop\weighing_scale_project\venv\Lib\site-packages\reportlab;reportlab" ^
+--add-data "C:\Users\Leoncio\Desktop\weighing_scale_project\assets;assets" ^
+weighing_scale_app.py
+
+

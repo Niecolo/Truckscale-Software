@@ -1,0 +1,10 @@
+[tool.pylance]
+typeCheckingMode = "off"
+
+[tool.pyright]
+typeCheckingMode = "off"
+include = ["weighing_scale_app.py"]
+exclude = ["venv", "build", "dist", "**/__pycache__"]
+
+[tool.python]
+analysis = {}
